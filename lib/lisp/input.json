@@ -1,0 +1,15 @@
+
+["do",
+  ["defn", "slice", ["list", "args"],
+    ["call", [".", [], ["quote", "slice"]], "list", "args"]],
+
+  ["defn", "sum", ["list"],
+    ["if", [">", [".", "list", "length"], 1],
+      ["+",
+        [".", "list", 0],
+        ["sum", ["slice", "list", 1]]],
+      [".", "list", 0]]],
+
+  ["def", "list", [1, 2, 3]],
+  ["sum", "list"]]
+

@@ -1,0 +1,36 @@
+env:
+  browser: true
+  commonjs: true
+  es2020: true
+  jest: true
+  node: true
+
+extends:
+  - standard
+  - plugin:jest/style
+  - plugin:jest/recommended
+
+plugins:
+  - jest-formatting
+
+rules:
+  arrow-parens: [error, as-needed]
+  no-var: error
+  spaced-comment:
+    - error
+    - always
+    -
+      line:
+        markers: ['*package', '!', '/', ',', '=']
+        exceptions: ['!', '?', 'todo', '*']
+      block:
+        balanced: true
+        markers: ['*package', '!', ',', ':', '::', 'flow-include']
+        exceptions: ['*']
+
+  # Jest
+  jest/consistent-test-it: [error, { fn: test, withinDescribe: it }]
+  jest/no-done-callback: error
+
+  # Jest Formatting
+  jest-formatting/padding-around-all: error

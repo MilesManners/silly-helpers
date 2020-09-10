@@ -17,20 +17,20 @@
     "test"
   ],
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-standard": "^12.0.0",
+    "eslint": "^7.8.1",
+    "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-jest": "^22.5.1",
-    "eslint-plugin-jest-formatting": "^0.0.9",
-    "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-jest": "^24.0.0",
+    "eslint-plugin-jest-formatting": "^2.0.0",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
-    "jest": "^24.8.0",
+    "jest": "^26.4.2",
     "pre-commit": "^1.2.2"
   },
   "dependencies": {
     "blessed": "^0.1.81",
-    "chalk": "^2.4.2",
-    "xterm": "^3.14.2"
+    "chalk": "^4.1.0",
+    "xterm": "^4.8.1"
   }
 }
